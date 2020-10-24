@@ -7,11 +7,11 @@ const { validarJwt } = require('../middlewares/validar-jwt');
 const router = Router();
 
 router.post('/new', [
-    check('nombre', 'El nombre es obligatorio').not().isEmpty(),
-    check('apellido', 'El apellido es obligatorio').not().isEmpty(),
-    check('telefono', 'El telefono es obligatorio').isLength(({ min: 9, max: 9 })),
-    check('email', 'El correo es obligatorio').isEmail(),
-    check('password', 'La contrasena es obligatorio').isLength(({ min: 10 })),
+    //check('nombre', 'El nombre es obligatorio').not().isEmpty(),
+    //check('apellido', 'El apellido es obligatorio').not().isEmpty(),
+    //check('telefono', 'El telefono es obligatorio').isLength(({ min: 9, max: 9 })),
+    //check('email', 'El correo es obligatorio').isEmail(),
+    //check('password', 'La contrasena es obligatorio').isLength(({ min: 10 })),
     validarCampos
 
 
